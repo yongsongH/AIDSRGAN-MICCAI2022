@@ -4,7 +4,7 @@
 Pytorch code for the paper  
 ["Rethinking Degradation: Radiograph Super-Resolution via AID-SRGAN"](https://hyongsong.work) | [MICCAI 2022 Workshop](https://sites.google.com/view/mlmi2022/)
 
-[Paper :sunny:](https://hyongsong.work) | [Poster :snowflake:](https://hyongsong.work) |  [Dataset :cyclone:](https://doi.org/10.6084/m9.figshare.20418036.v2 ) | [Pre-trained Model（Includes PSRGAN: ***kdsrgan_medical_x2_120000_G eg.***）:zap:](https://doi.org/10.6084/m9.figshare.20418384.v3)
+[Paper :sunny:](https://hyongsong.work) | [Poster :snowflake:](https://hyongsong.work) |  [Dataset :cyclone:](https://doi.org/10.6084/m9.figshare.20418036.v2 ) | [Model（Includes PSRGAN: ***kdsrgan_medical_x2_120000_G eg.***）:zap:](https://doi.org/10.6084/m9.figshare.20418384.v3)
 
 ## About this repo:
 
