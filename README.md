@@ -1,10 +1,10 @@
-# AIDSRGAN
+# [AIDSRGAN](https://arxiv.org/abs/2208.03008)
  
 
 Pytorch code for the paper  
-["Rethinking Degradation: Radiograph Super-Resolution via AID-SRGAN"](https://hyongsong.work) | [MICCAI 2022 Workshop](https://sites.google.com/view/mlmi2022/)
+["Rethinking Degradation: Radiograph Super-Resolution via AID-SRGAN"](https://arxiv.org/abs/2208.03008) | [MICCAI 2022 Workshop](https://sites.google.com/view/mlmi2022/)
 
-[Paper :sunny:](https://hyongsong.work) | [Poster :snowflake:](https://hyongsong.work) |  [Dataset :cyclone:](https://doi.org/10.6084/m9.figshare.20418036.v3 ) | [Model（Includes PSRGAN: ***kdsrgan_medical_x2_120000_G eg.***）:zap:](https://doi.org/10.6084/m9.figshare.20418384.v3)
+[Paper :sunny:](https://arxiv.org/abs/2208.03008) | [Poster :snowflake:](https://hyongsong.work) |  [Dataset :cyclone:](https://doi.org/10.6084/m9.figshare.20418036.v3 ) | [Model（Includes PSRGAN: ***kdsrgan_medical_x2_120000_G eg.***）:zap:](https://doi.org/10.6084/m9.figshare.20418384.v3)
 
 ## About this repo:
 
@@ -143,7 +143,25 @@ After the ***parameters*** are confirmed, please run the test code. Like:
 ## Citation:
 
 ```bash
-　Coming soon.
+
+　@misc{https://doi.org/10.48550/arxiv.2208.03008,
+ 
+  doi = {10.48550/ARXIV.2208.03008},
+  
+  url = {https://arxiv.org/abs/2208.03008},
+  
+  author = {Huang, Yongsong and Wang, Qingzhong and Omachi, Shinichiro},
+  
+  
+  title = {Rethinking Degradation: Radiograph Super-Resolution via AID-SRGAN},
+  
+  publisher = {arXiv},
+  
+  year = {2022},
+  
+  copyright = {Creative Commons Attribution 4.0 International}
+}
+
 
 ```
 ## Contact
