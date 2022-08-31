@@ -38,7 +38,7 @@ libopencv==0.0.1
 lmdb==0.98
 Markdown==3.2.2
 matplotlib==3.2.2
-matplotlib-inline=0.1.2
+matplotlib-inline==0.1.2
 menuinst==1.4.16
 mkl-fft==1.0.14
 mkl-random==1.0.4
