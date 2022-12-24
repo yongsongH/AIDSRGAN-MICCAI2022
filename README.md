@@ -1,8 +1,8 @@
-# [AIDSRGAN](https://arxiv.org/abs/2208.03008)
+# [AIDSRGAN](https://doi.org/10.1007/978-3-031-21014-3_5)
  
 
 Pytorch code for the paper  
-["Rethinking Degradation: Radiograph Super-Resolution via AID-SRGAN"](https://arxiv.org/abs/2208.03008) | [MICCAI 2022 Workshop](https://sites.google.com/view/mlmi2022/)
+["Rethinking Degradation: Radiograph Super-Resolution via AID-SRGAN"](https://doi.org/10.1007/978-3-031-21014-3_5) | [MICCAI 2022 Workshop](https://sites.google.com/view/mlmi2022/)
 
 [Paper :sunny:](https://arxiv.org/abs/2208.03008) | [Poster :snowflake:](https://hyongsong.work) |  [Dataset :cyclone:](https://doi.org/10.6084/m9.figshare.20418036.v3 ) | [Model（Includes PSRGAN: ***kdsrgan_medical_x2_120000_G eg.***）:zap:](https://doi.org/10.6084/m9.figshare.20418384.v3)
 
