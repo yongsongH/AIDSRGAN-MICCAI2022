@@ -168,4 +168,4 @@ After the ***parameters*** are confirmed, please run the test code. Like:
 
 If you meet any problems, please describe them and [contact](https://hyongsong.work/) me. 
 
-:no_good_man: **Impolite or anonymous emails are not welcome. Thank you for understanding.**
+:no_good_man: **Impolite or anonymous emails are not welcome. There may be some difficulties for me to respond to the email without self-introduce. Thank you for understanding.**
