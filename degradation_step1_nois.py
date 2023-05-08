@@ -73,7 +73,7 @@ def sp_noise2(img):
     img1 = img.copy()
     sp = h * w  # 计算图像像素点个数
 
-    snr = random.uniform(0.9, 0.99)  # 范围越小 黑点越密集 咋回事
+    snr = random.uniform(0.9, 0.99)  
 
     NP = int(sp * (1 - snr))  # 计算图像椒盐噪声点个数
     for i in range(NP):
