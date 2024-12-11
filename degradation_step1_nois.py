@@ -35,8 +35,8 @@ This is the earliest part of the degradation: statistical noise.
 
 
 def gaussianblur(img):
-    k_num1 = random.randint(1, 5)  # 高斯核必须为正数和奇数
-    k_num2 = random.randint(1, 5)  # 高斯核必须为正数和奇数
+    k_num1 = random.randint(1, 5) 
+    k_num2 = random.randint(1, 5)   
 
     if k_num1 % 2 == 0:
         k_num1 = k_num1 + 1
@@ -54,7 +54,7 @@ def gaussianblur(img):
 def motion_blur(image, degree=6, angle=45):
     image = np.array(image)
 
-    # 这里生成任意角度的运动模糊kernel的矩阵， degree越大，模糊程度越高
+    
     M = cv2.getRotationMatrix2D((degree / 2, degree / 2), angle, 1)
     motion_blur_kernel = np.diag(np.ones(degree))
     motion_blur_kernel = cv2.warpAffine(motion_blur_kernel, M, (degree, degree))
@@ -71,15 +71,14 @@ def sp_noise2(img):
     h = img.shape[0]
     w = img.shape[1]
     img1 = img.copy()
-    sp = h * w  # 计算图像像素点个数
-
+    sp = h * w  
     snr = random.uniform(0.9, 0.99)  
 
-    NP = int(sp * (1 - snr))  # 计算图像椒盐噪声点个数
+    NP = int(sp * (1 - snr))  
     for i in range(NP):
-        randx = np.random.randint(1, h - 1)  # 生成一个 1 至 h-1 之间的随机整数
-        randy = np.random.randint(1, w - 1)  # 生成一个 1 至 w-1 之间的随机整数
-        if np.random.random() <= 0.5:  # np.random.random()生成一个 0 至 1 之间的浮点数
+        randx = np.random.randint(1, h - 1)  
+        randy = np.random.randint(1, w - 1)  
+        if np.random.random() <= 0.5: 
             img1[randx, randy] = 0
         else:
             img1[randx, randy] = 255
@@ -97,15 +96,11 @@ def sp_noise(img): # Poisson
 
 
 def read_path(file_pathname,output_pathname):
-    #遍历该目录下的所有图片文件
+
     for filename in os.listdir(file_pathname):
         print(filename)
         img = cv2.imread(file_pathname+'/'+filename)
-        ####change to gray
-      #（下面第一行是将RGB转成单通道灰度图，第二步是将单通道灰度图转成3通道灰度图）
-        # img=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
-        # image_np=cv2.cvtColor(img,cv2.COLOR_GRAY2BGR)
-        # 确定0-9
+      
         randnum = random.randint(0, 9)
         # randnum = randnum % 10
 
@@ -141,8 +136,6 @@ def read_path(file_pathname,output_pathname):
 
         cv2.imwrite(output_pathname+"/"+filename,img_out)
 
-#注意*处如果包含家目录（home）不能写成~符号代替
-#必须要写成"/home"的格式，否则会报错说找不到对应的目录
-#读取的目录 原路径-》目标路径
+
 
 read_path("F:/HYS/1213/medical dataset/X4/test medical image X4/new test medical image_hr","F:/HYS/1213/medical dataset/X4/test medical image X4/new test medical image_real_hr+noise_v2")
