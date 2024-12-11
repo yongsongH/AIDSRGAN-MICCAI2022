@@ -32,7 +32,7 @@ This is the final stage of degradation: image compression. We recommend to compr
 """
 
 def read_path(file_pathname,output_pathname):
-        #遍历该目录下的所有图片文件
+
     for filename in os.listdir(file_pathname):
         print(filename)
         img = cv2.imread(file_pathname+'/'+filename)
@@ -40,9 +40,7 @@ def read_path(file_pathname,output_pathname):
         #save figure
         cv2.imwrite(output_pathname+"/"+filename, img, [int(cv2.IMWRITE_PNG_COMPRESSION), 3])
 
-#注意*处如果包含家目录（home）不能写成~符号代替
-#必须要写成"/home"的格式，否则会报错说找不到对应的目录
-#读取的目录
+
 
 read_path("new_dataset/dataset/new test medical image_real_hr+noise_v2/JPG_De",
           "new_dataset/dataset/new test medical image_real_hr+noise_v2/JPG_De_2")
