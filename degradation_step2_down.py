@@ -29,7 +29,7 @@ This is the second stage of degradation: downsampling.
 """
 
 def read_path(file_pathname,output_pathname):
-    #遍历该目录下的所有图片文件
+
     for filename in os.listdir(file_pathname):
         print(filename)
         img = cv.imread(file_pathname+'/'+filename)
@@ -41,7 +41,5 @@ def read_path(file_pathname,output_pathname):
         newimg = cv.resize(img, (x,y), interpolation=cv.INTER_CUBIC )
         cv.imwrite(output_pathname+"/"+filename,newimg)
 
-#注意*处如果包含家目录（home）不能写成~符号代替
-#必须要写成"/home"的格式，否则会报错说找不到对应的目录
-#读取的目录
+
 read_path("testsets/heatmap/test","testsets/heatmap/test")
